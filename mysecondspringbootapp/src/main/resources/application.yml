@@ -1,0 +1,16 @@
+server:
+  port: 8081      # Local Port number to run the application
+spring:
+  datasource:
+    url: ${SPRING_DATASOURCE_URL:jdbc:oracle:thin:@//localhost:1521/XE}     #SPRING_DATASOURCE_URL which is defined in docker-compose file
+    username: ${SPRING_DATASOURCE_USERNAME:system}                          #SPRING_DATASOURCE_USERNAME which is defined in docker-compose file
+    password: ${SPRING_DATASOURCE_PASSWORD:root}                            #SPRING_DATASOURCE_PASSWORD which is defined in docker-compose file
+    driver-class-name: ${SPRING_DATASOURCE_DRIVER:oracle.jdbc.OracleDriver} #SPRING_DATASOURCE_DRIVER which is defined in docker-compose file
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.OracleDialect
+

@@ -23,7 +23,7 @@ public class TestController {
 
     @GetMapping("/")
     public String testMethod() {
-        return "Hello this is my first spring boot app!!!!!";
+        return "Hello this is home page of my first spring boot app!!!!!";
     }
     
     @PostMapping("/users/add")
