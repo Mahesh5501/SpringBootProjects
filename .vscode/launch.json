@@ -15,6 +15,16 @@
             "projectName": "jwt",
             "args": "",
             "envFile": "${workspaceFolder}/.env"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-SpringbootMongodbApplication<springboot-mongodb>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.springbootmongo.springboot_mongodb.SpringbootMongodbApplication",
+            "projectName": "springboot-mongodb",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
         }
     ]
 }
