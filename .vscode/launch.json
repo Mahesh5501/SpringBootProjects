@@ -2,6 +2,12 @@
     "configurations": [
         {
             "type": "java",
+            "name": "SpringbootMongodbApplication",
+            "request": "launch",
+            "mainClass": "com.springbootmongo.springboot_mongodb.SpringbootMongodbApplication"
+        },
+        {
+            "type": "java",
             "name": "Spring Boot-JwtApplication<jwt>",
             "request": "launch",
             "cwd": "${workspaceFolder}",

@@ -1,0 +1,6 @@
+server:
+  port: 8081 # Local Port number to run the application
+spring:
+  data:
+    mongodb:
+      uri: mongodb://127.0.0.1:27017/test
